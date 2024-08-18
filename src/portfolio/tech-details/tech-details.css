@@ -34,3 +34,27 @@
     padding: 10px 0;
     text-align: center;
 }
+
+@media (max-width: 900px) {
+    .tech-details .images-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 755px) {
+    .tech-details .images-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 550px) {
+    .tech-details .images-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 450px) {
+    .tech-details .images-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
