@@ -36,7 +36,7 @@ function ProfileSummary() {
 
   const handleCVDownload = () => {
     // Create an anchor element
-    window.open(`../../Nadeem_CV.pdf`, '_blank')
+    window.open('/Nadeem_CV.pdf', '_blank')
   }
 
   return (
