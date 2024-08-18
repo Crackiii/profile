@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom'
 
 import NadeemImage from '../../images/Nadeem-round.png'
 
+import PDF from './Nadeem_CV.pdf'
+
 import './profile-summary.css'
 
 export function makeTextBold(input: string): JSX.Element {
@@ -35,10 +37,8 @@ function ProfileSummary() {
     high **code quality** to ensure optimal user experiences.`
 
   const handleCVDownload = () => {
-    const baseUrl = process.env.PUBLIC_URL
-
     // Open the PDF file in a new tab
-    window.open(`${baseUrl}/Nadeem_CV.pdf`, '_blank')
+    window.open(PDF, '_blank')
   }
 
   return (
