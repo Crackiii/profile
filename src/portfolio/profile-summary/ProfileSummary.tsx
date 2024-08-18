@@ -3,8 +3,6 @@ import { useNavigate } from 'react-router-dom'
 
 import NadeemImage from '../../images/Nadeem-round.png'
 
-import PDF from './Nadeem_CV.pdf'
-
 import './profile-summary.css'
 
 export function makeTextBold(input: string): JSX.Element {
@@ -38,7 +36,7 @@ function ProfileSummary() {
 
   const handleCVDownload = () => {
     // Open the PDF file in a new tab
-    window.open(PDF, '_blank')
+    window.open('/Nadeem_CV.pdf', '_blank')
   }
 
   return (
@@ -52,11 +50,7 @@ function ProfileSummary() {
       <div className="profile-details">{makeTextBold(text)}</div>
       <div className="buttons">
         <button onClick={() => navigate('/about')}>Read more about me →</button>
-        <button onClick={handleCVDownload}>
-          <a download="Nadeem_Ahmad_CV.pdf" href={PDF}>
-            View my CV ↑
-          </a>
-        </button>
+        <button onClick={handleCVDownload}>View my CV ↑</button>
       </div>
     </div>
   )
