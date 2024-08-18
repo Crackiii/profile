@@ -1,0 +1,75 @@
+import { Particles, initParticlesEngine } from '@tsparticles/react'
+import { loadSlim } from '@tsparticles/slim' // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
+import { useEffect, useState } from 'react'
+
+const ParticlesC = () => {
+  const [init, setInit] = useState(false)
+
+  useEffect(() => {
+    initParticlesEngine(async (engine) => {
+      await loadSlim(engine)
+    }).then(() => {
+      setInit(true)
+    })
+  }, [])
+
+  if (!init) {
+    return null
+  }
+
+  return (
+    <Particles
+      id="tsparticles"
+      options={{
+        background: {
+          color: {
+            value: ''
+          }
+        },
+        fpsLimit: 120,
+        particles: {
+          color: {
+            value: '#005eff'
+          },
+          links: {
+            color: '#005eff',
+            distance: 150,
+            enable: true,
+            opacity: 0.5,
+            width: 1
+          },
+          move: {
+            direction: 'none',
+            enable: true,
+            outModes: {
+              default: 'bounce'
+            },
+            random: false,
+            speed: 1,
+            straight: false
+          },
+          number: {
+            density: {
+              enable: true
+            },
+            value: 200
+          },
+          opacity: {
+            value: 0.3
+          },
+          shape: {
+            type: 'triangle'
+          },
+          size: {
+            value: { min: 1, max: 10 }
+          }
+        },
+        detectRetina: true
+      }}
+    />
+  )
+}
+
+ParticlesC.displayName = 'Particles'
+
+export default ParticlesC

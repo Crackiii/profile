@@ -1,0 +1,9 @@
+.portfolio {
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
