@@ -35,8 +35,10 @@ function ProfileSummary() {
     high **code quality** to ensure optimal user experiences.`
 
   const handleCVDownload = () => {
-    // Create an anchor element
-    window.open('/Nadeem_CV.pdf', '_blank')
+    const baseUrl = process.env.REACT_APP_BASE_URL
+
+    // Open the PDF file in a new tab
+    window.open(`${baseUrl}/Nadeem_CV.pdf`, '_blank')
   }
 
   return (
