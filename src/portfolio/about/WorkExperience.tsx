@@ -1,4 +1,4 @@
-import Dinkum from '../../images/work/dinkum.jpeg'
+import Dinkum from '../../images/work/dinkum.png'
 import Epilot from '../../images/work/epilot.png'
 import Eziline from '../../images/work/exiline.png'
 import IBM from '../../images/work/ibm.jpg'
