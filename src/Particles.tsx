@@ -35,7 +35,7 @@ const ParticlesC = () => {
             color: '#005eff',
             distance: 150,
             enable: true,
-            opacity: 0.5,
+            opacity: 0.1,
             width: 1
           },
           move: {
@@ -55,7 +55,7 @@ const ParticlesC = () => {
             value: 200
           },
           opacity: {
-            value: 0.3
+            value: 0.1
           },
           shape: {
             type: 'triangle'

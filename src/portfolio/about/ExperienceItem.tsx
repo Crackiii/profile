@@ -8,6 +8,7 @@ interface Props {
   date: string
   description: string
   companyImage: string
+  technologies: string[]
 }
 
 function ExperienceItem(props: Props) {
@@ -32,6 +33,15 @@ function ExperienceItem(props: Props) {
         <div className="date"> - ({props.date})</div>
       </div>
       <div className="description">{props.description}</div>
+      <div className="technologies">
+        <div className="tags">
+          {props.technologies.map((technology, index) => (
+            <div className="tag" key={index}>
+              {technology}
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   )
 }
