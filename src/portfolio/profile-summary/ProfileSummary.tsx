@@ -52,7 +52,11 @@ function ProfileSummary() {
       <div className="profile-details">{makeTextBold(text)}</div>
       <div className="buttons">
         <button onClick={() => navigate('/about')}>Read more about me →</button>
-        <button onClick={handleCVDownload}>View my CV ↑</button>
+        <button onClick={handleCVDownload}>
+          <a download="Nadeem_Ahmad_CV.pdf" href={PDF}>
+            View my CV ↑
+          </a>
+        </button>
       </div>
     </div>
   )

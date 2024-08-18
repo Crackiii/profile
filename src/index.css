@@ -63,6 +63,10 @@ button {
   button:hover, button:focus{
     color: white;
   }
+
+  button:hover a, button:focus a{
+    color: white;
+  }
   
   button:hover:before, button:focus:before {
     transition: 0.5s all ease;
