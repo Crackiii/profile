@@ -13,7 +13,10 @@
 }
 
 .experience-item .company-image img {
-    width: 40px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .experience-item .company-location {
