@@ -12,6 +12,7 @@ import ElasticSearch from '../../images/techs/elastic.png'
 import EsBuild from '../../images/techs/esbuild.png'
 import FaskApi from '../../images/techs/fastapi.png'
 import FeatureFlag from '../../images/techs/featureflag.png'
+import Firebase from '../../images/techs/firebase.png'
 import Flask from '../../images/techs/flask.png'
 import Git from '../../images/techs/git.png'
 import GitlabCI from '../../images/techs/gitlab-ci.png'
@@ -40,6 +41,7 @@ import ReactQuery from '../../images/techs/react-query.png'
 import React from '../../images/techs/react.png'
 import Redis from '../../images/techs/redis.png'
 import Rest from '../../images/techs/rest.png'
+import Rust from '../../images/techs/rust.png'
 import Sass from '../../images/techs/sass.png'
 import StoryBook from '../../images/techs/storybook.png'
 import Svelete from '../../images/techs/svelte.png'
@@ -171,6 +173,10 @@ export const techs = [
     image: Mongo
   },
   {
+    name: 'Firebase',
+    image: Firebase
+  },
+  {
     name: 'Redis',
     image: Redis
   },
@@ -189,14 +195,6 @@ export const techs = [
   {
     name: 'Elastic Search',
     image: ElasticSearch
-  },
-  {
-    name: 'DataDog',
-    image: DataDog
-  },
-  {
-    name: 'Feature Flag',
-    image: FeatureFlag
   },
   {
     name: 'JWT',
@@ -267,11 +265,23 @@ export const techs = [
     image: Jupyter
   },
   {
+    name: 'DataDog',
+    image: DataDog
+  },
+  {
+    name: 'Feature Flag',
+    image: FeatureFlag
+  },
+  {
     name: 'LaunchDarkly',
     image: LaunchDarkly
   },
   {
     name: 'TurboRepo',
     image: Turborepo
+  },
+  {
+    name: 'Rust (Learning)',
+    image: Rust
   }
 ]
