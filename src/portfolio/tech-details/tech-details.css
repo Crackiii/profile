@@ -56,5 +56,6 @@
 @media (max-width: 450px) {
     .tech-details .images-container {
         grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
     }
 }

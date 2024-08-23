@@ -1,0 +1,25 @@
+.navigation {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.white-bg {
+    background: #ffffff;
+}
+
+.navigation .navigation-item {
+    padding: 8px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.5s;
+}
+
+.navigation .navigation-item:hover {
+    background: #daeaf9;
+}

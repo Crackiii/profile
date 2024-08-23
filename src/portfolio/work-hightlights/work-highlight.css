@@ -39,3 +39,16 @@
     background-color: rgb(237, 242, 247);
     padding: 5px 10px;
 }
+
+@media (max-width: 450px) {
+    .work-highlight .highlight {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .work-highlight .work-img {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}

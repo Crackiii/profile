@@ -58,3 +58,13 @@
     background-color: rgb(237, 242, 247);
     padding: 5px 10px;
 }
+
+@media (max-width: 550px) {
+    .experience-item .header {
+        flex-wrap: wrap;
+    }
+
+    .experience-item .my-details{
+        flex-wrap: wrap;
+    }
+}

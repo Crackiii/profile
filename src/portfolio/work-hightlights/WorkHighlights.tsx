@@ -4,7 +4,7 @@ import Triumpho from '../../images/work/triupho.jpg'
 import Vidy from '../../images/work/vidy2.png'
 import './work-highlight.css'
 
-const HightLights = [
+const hightLights = [
   {
     title: 'Triumpho.ai - A plateform to make better version of self',
     description: `Triumpho is a platform that helps users to improve their mental
@@ -84,7 +84,7 @@ function WorkHighlights() {
     <div className="work-highlight">
       <h2>✨ Work Highlights</h2>
 
-      {HightLights.map((highlight, index) => (
+      {hightLights.map((highlight, index) => (
         <div className="highlight" key={index}>
           <div className="work-img">
             <img alt="highlight" src={highlight.image} />
