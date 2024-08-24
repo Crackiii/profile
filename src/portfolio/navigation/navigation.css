@@ -18,8 +18,13 @@
     cursor: pointer;
     border-radius: 3px;
     transition: background-color 0.5s;
+    text-decoration: none;
 }
 
 .navigation .navigation-item:hover {
+    background: #daeaf9;
+}
+
+.hovered-bg {
     background: #daeaf9;
 }

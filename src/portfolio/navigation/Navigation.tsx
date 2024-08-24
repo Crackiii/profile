@@ -1,10 +1,8 @@
 import { useEffect } from 'react'
 import './navigation.css'
-import { useNavigate } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 function Navigation() {
-  const navigate = useNavigate()
-
   useEffect(() => {
     // on scroll apply styles to the navigation
     const handleScroll = () => {
@@ -25,33 +23,30 @@ function Navigation() {
 
   return (
     <div className="navigation">
-      <div
-        className="navigation-item"
-        onClick={() => navigate('/')}
-        onKeyDown={() => ''}
-        role="button"
-        tabIndex={0}
+      <NavLink
+        className={({ isActive }) => {
+          return isActive ? 'navigation-item hovered-bg' : 'navigation-item'
+        }}
+        to={'/'}
       >
         Home
-      </div>
-      <div
-        className="navigation-item"
-        onClick={() => navigate('/about')}
-        onKeyDown={() => ''}
-        role="button"
-        tabIndex={0}
+      </NavLink>
+      <NavLink
+        className={({ isActive }) => {
+          return isActive ? 'navigation-item hovered-bg' : 'navigation-item'
+        }}
+        to={'/about'}
       >
         About
-      </div>
-      <div
-        className="navigation-item"
-        onClick={() => navigate('/about')}
-        onKeyDown={() => ''}
-        role="button"
-        tabIndex={0}
+      </NavLink>
+      <NavLink
+        className={({ isActive }) => {
+          return isActive ? 'navigation-item hovered-bg' : 'navigation-item'
+        }}
+        to={'/blogs'}
       >
         Blogs
-      </div>
+      </NavLink>
     </div>
   )
 }
