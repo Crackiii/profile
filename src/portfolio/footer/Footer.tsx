@@ -1,4 +1,7 @@
 import './footer.css'
+import { useEffect, useRef } from 'react'
+
+import { useAppContext } from '../../context/AppContext'
 import Github from '../../images/social/github.png'
 import Gitlab from '../../images/social/gitlab.png'
 import Email from '../../images/social/gmail.png'
@@ -8,8 +11,17 @@ import X from '../../images/social/x.png'
 import Youtube from '../../images/social/youtube.png'
 
 function Footer() {
+  const footerRef = useRef<HTMLDivElement>(null)
+  const { theme } = useAppContext()
+
+  useEffect(() => {
+    footerRef.current?.querySelectorAll('div').forEach((el) => {
+      el.style.backgroundColor = theme === 'dark' ? '#ffffffbc' : ''
+    })
+  }, [theme])
+
   return (
-    <div className="footer">
+    <div className="footer" ref={footerRef}>
       <a href="https://github.com/Crackiii" rel="noreferrer" target="_blank">
         <div>
           <img alt="Github" src={Github} />
