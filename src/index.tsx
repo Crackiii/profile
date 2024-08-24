@@ -6,6 +6,7 @@ import './index.css'
 import AppContextProvider from './context/AppContext'
 import ParticlesC from './Particles'
 import About from './portfolio/about/About'
+import Blogs from './portfolio/blogs/Blogs'
 import Details from './portfolio/details/Details'
 import Navigation from './portfolio/navigation/Navigation'
 import reportWebVitals from './reportWebVitals'
@@ -23,6 +24,9 @@ root.render(
             <Routes>
               <Route element={<Details />} path="/" />
               <Route element={<About />} path="/about" />
+              <Route element={<Blogs />} path="/blogs" />
+              <Route element={<div>Fun</div>} path="/fun" />
+              <Route element={<div>404</div>} path="*" />
             </Routes>
           </div>
         </Router>

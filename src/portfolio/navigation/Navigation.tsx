@@ -65,6 +65,14 @@ function Navigation() {
           >
             Blogs
           </NavLink>
+          <NavLink
+            className={({ isActive }) => {
+              return isActive ? 'navigation-item hovered-bg' : 'navigation-item'
+            }}
+            to={'/fun'}
+          >
+            Fun
+          </NavLink>
         </div>
         <div className="right-content">
           <div
