@@ -17,7 +17,7 @@
 .tech-details .tech-img {
     width: 50px;
     height: 50px;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     display: block;
     overflow: hidden;
     display: flex;

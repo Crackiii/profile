@@ -2,8 +2,13 @@ import { Particles, initParticlesEngine } from '@tsparticles/react'
 import { loadSlim } from '@tsparticles/slim' // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 import { useEffect, useState } from 'react'
 
+import { useAppContext } from './context/AppContext'
+
 const ParticlesC = () => {
   const [init, setInit] = useState(false)
+  const { theme } = useAppContext()
+
+  const backgroundColor = theme === 'light' ? '#f5f5f5' : '#3a3a3a22'
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -23,7 +28,7 @@ const ParticlesC = () => {
       options={{
         background: {
           color: {
-            value: ''
+            value: backgroundColor
           }
         },
         fpsLimit: 120,

@@ -9,24 +9,24 @@
 }
 
 .white-bg {
-    background: #ffffff;
+    background: var(--background-color);
 }
 
 .navigation .navigation-item {
     padding: 8px 15px;
     margin-right: 10px;
     cursor: pointer;
-    border-radius: 3px;
+    border-radius: var(--border-radius);
     transition: background-color 0.5s;
     text-decoration: none;
 }
 
 .navigation .navigation-item:hover {
-    background: #daeaf9;
+    background: var(--hover-color);
 }
 
 .hovered-bg {
-    background: #daeaf9;
+    background: var(--hover-color);
 }
 
 
@@ -47,7 +47,7 @@
 .right-content .theme-switcher img{
     width: 50px;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
 }
 
 @media (max-width: 900px) {

@@ -13,12 +13,12 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     transition: background-color 0.5s;
 }
 
 .footer a div:hover {
-    background-color: #daeaf9;
+    background-color: var(--hover-color);
 }
 
 .footer a img {

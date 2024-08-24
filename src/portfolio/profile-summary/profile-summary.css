@@ -4,7 +4,7 @@
     row-gap: 30px;
 }
 .profile-summary .summary {
-    color: #717171
+    color: var(--text-light-color)
 }
 .profile-summary .profile-image {
     width: 150px;
@@ -22,15 +22,16 @@
 
 
 .profile-summary .profile-details {
-    color: #717171;
+    color: var(--text-light-color);
     line-height: 1.6;
+    letter-spacing: 0.6px;
 }
 
 .profile-summary .profile-details strong {
-    background-color: #ffd9000d;
-    border: 1px solid #ffd700b5;
-    padding: 2px;
-    color: #000000;
+    background-color: var(--highlight-bg-color);
+    border: 1px solid var(--highlight-border-color);
+    padding: 0px 2px;
+    color: var(--text-strong-color);
     line-height: 150%;
 }
 
