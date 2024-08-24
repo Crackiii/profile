@@ -3,7 +3,7 @@ import Epilot from '../../images/work/epilot.png'
 import Eziline from '../../images/work/exiline.png'
 import IBM from '../../images/work/ibm.png'
 import Teknords from '../../images/work/teknords.png'
-import Triumpho from '../../images/work/triupho.jpg'
+import Triumpho from '../../images/work/triupho.png'
 import Vidy from '../../images/work/vidy2.png'
 
 import ExperienceItem from './ExperienceItem'

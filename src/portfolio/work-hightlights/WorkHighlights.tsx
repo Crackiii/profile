@@ -1,6 +1,6 @@
 import Epilot from '../../images/work/epilot.png'
-import Tamm from '../../images/work/tamm.jpg'
-import Triumpho from '../../images/work/triupho.jpg'
+import Tamm from '../../images/work/tamm.png'
+import Triumpho from '../../images/work/triupho.png'
 import Vidy from '../../images/work/vidy2.png'
 import './work-highlight.css'
 
