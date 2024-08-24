@@ -25,7 +25,7 @@ root.render(
               <Route element={<Details />} path="/" />
               <Route element={<About />} path="/about" />
               <Route element={<Blogs />} path="/blogs" />
-              <Route element={<div>Fun</div>} path="/fun" />
+              <Route element={<h3>Coming soon ...</h3>} path="/fun" />
               <Route element={<div>404</div>} path="*" />
             </Routes>
           </div>
