@@ -1,8 +1,9 @@
 export async function fetchMediumPosts() {
-  const rssUrl = 'https://medium.com/feed/@nadeem.ahmad.na' // Replace with your RSS feed URL
+  const rssUrl = 'https://medium.com/feed/@nadeem.ahmad.na'
   const response = await fetch(
     `https://api.rss2json.com/v1/api.json?rss_url=${rssUrl}`
   )
+
   const data = await response.json()
 
   if (data.status === 'ok') {

@@ -21,8 +21,6 @@ function Blogs() {
     })
   }, [])
 
-  console.log({ posts })
-
   return (
     <div className="blogs">
       {posts.map((post, index) => {
