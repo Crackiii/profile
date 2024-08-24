@@ -17,7 +17,22 @@ export const InitialState: ContextType = {
 export const AppContext = createContext<ContextType | undefined>(undefined)
 
 const AppContextProvider = (props: { children: JSX.Element }) => {
-  const [theme, setTheme] = React.useState<Theme>(InitialState.theme)
+  const [theme, setTheme] = React.useState<Theme>(() => {
+    const systemPrefersDark = window.matchMedia(
+      '(prefers-color-scheme: dark)'
+    ).matches
+
+    return systemPrefersDark ? 'dark' : 'light'
+  })
+
+  React.useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+    const handleChange = () => setTheme(mediaQuery.matches ? 'dark' : 'light')
+
+    mediaQuery.addEventListener('change', handleChange)
+
+    return () => mediaQuery.removeEventListener('change', handleChange)
+  }, [])
 
   return (
     <AppContext.Provider
