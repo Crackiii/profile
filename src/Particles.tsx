@@ -9,6 +9,7 @@ const ParticlesC = () => {
   const { theme } = useAppContext()
 
   const backgroundColor = theme === 'light' ? '#f5f5f5' : '#3a3a3a22'
+  const particlesColor = theme === 'light' ? '#005eff' : '#ffffff'
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -34,10 +35,10 @@ const ParticlesC = () => {
         fpsLimit: 120,
         particles: {
           color: {
-            value: '#005eff'
+            value: particlesColor
           },
           links: {
-            color: '#005eff',
+            color: particlesColor,
             distance: 150,
             enable: true,
             opacity: 0.1,
