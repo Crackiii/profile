@@ -20,6 +20,7 @@ import Go from '../../images/techs/go.png'
 import GraphQL from '../../images/techs/graphql.png'
 import Jest from '../../images/techs/jest.png'
 import Jira from '../../images/techs/jira.png'
+import Jotai from '../../images/techs/jotai.png'
 import JavaScript from '../../images/techs/js.png'
 import Jupyter from '../../images/techs/jupyter.png'
 import Jwt from '../../images/techs/jwt.png'
@@ -42,6 +43,7 @@ import React from '../../images/techs/react.png'
 import Redis from '../../images/techs/redis.png'
 import Rest from '../../images/techs/rest.png'
 import Rust from '../../images/techs/rust.png'
+import SAM from '../../images/techs/sam.png'
 import Sass from '../../images/techs/sass.png'
 import StoryBook from '../../images/techs/storybook.png'
 import Svelete from '../../images/techs/svelte.png'
@@ -53,17 +55,23 @@ import Turborepo from '../../images/techs/turborepo.png'
 import Vitest from '../../images/techs/vitest.png'
 import Vue from '../../images/techs/vue.png'
 import WebPack from '../../images/techs/webpack.png'
+import Zustand from '../../images/techs/zustand.png'
 
 /**
- * Following order is used in the portfolio:
- * tailwind, sass, css, html, storybook,
- * javascript, typescript, react, vue, angular, svelte, react query, nextjs
- * node, python, flask, fastapi, django, go, graphql, rest, openapi, swagger,
- * cdk, terraform, docker, k8s, aws, dynamodb, postgresql, mysql, mongo, redis, clickhouse, kafka, rabbitmq, elastic search, datadog, feature flag, jwt,
- * jest, mocha, cypress, playWright, vitest, esbuild, webpack
+  Groupings:
+  Frontend: JavaScript, TypeScript, React, React Native, Vue, Angular, Svelte, React Query, NextJS, Tailwind, Sass, StoryBook
+  Backend: Node, Python, Flask, FastAPI, Django, Go
+  Cloud: AWS, CDK, Terraform, Docker, DynamoDB
+  APIs: JWT, REST, GraphQL, OpenAPI, Swagger, Postman
+  Databases: PostgreSQL, MySQL, MongoDB, Firebase, Redis, ClickHouse, Kafka, RabbitMQ, Elastic Search
+  Testing: Jest, Mocha, Cypress, PlayWright, Vitest
+  Build Tools: EsBuild, Webpack, TurboRepo
+  DevOps and Other Tools: Git, Gitlab CI, Jira, Confluence, Jupyter, DataDog, Feature Flag, LaunchDarkly
+  Learning: Rust
  */
 
 export const techs = [
+  // Frontend
   {
     name: 'JavaScript',
     image: JavaScript
@@ -97,9 +105,31 @@ export const techs = [
     image: ReactQuery
   },
   {
+    name: 'Zustand',
+    image: Zustand
+  },
+  {
+    name: 'Jatoi',
+    image: Jotai
+  },
+  {
     name: 'NextJS',
     image: NextJS
   },
+  {
+    name: 'Tailwind',
+    image: Tailwind
+  },
+  {
+    name: 'Sass',
+    image: Sass
+  },
+  {
+    name: 'StoryBook',
+    image: StoryBook
+  },
+
+  // Backend
   {
     name: 'Node',
     image: Node
@@ -124,25 +154,19 @@ export const techs = [
     name: 'Go',
     image: Go
   },
+
+  // Cloud
   {
-    name: 'GraphQL',
-    image: GraphQL
-  },
-  {
-    name: 'REST',
-    image: Rest
-  },
-  {
-    name: 'OpenAPI',
-    image: OpenApi
-  },
-  {
-    name: 'Swagger',
-    image: Swagger
+    name: 'AWS',
+    image: AWS
   },
   {
     name: 'CDK',
     image: CDK
+  },
+  {
+    name: 'SAM',
+    image: SAM
   },
   {
     name: 'Terraform',
@@ -153,13 +177,37 @@ export const techs = [
     image: Docker
   },
   {
-    name: 'AWS',
-    image: AWS
-  },
-  {
     name: 'DynamoDB',
     image: DynamoDB
   },
+
+  // APIs
+  {
+    name: 'JWT',
+    image: Jwt
+  },
+  {
+    name: 'REST',
+    image: Rest
+  },
+  {
+    name: 'GraphQL',
+    image: GraphQL
+  },
+  {
+    name: 'OpenAPI',
+    image: OpenApi
+  },
+  {
+    name: 'Swagger',
+    image: Swagger
+  },
+  {
+    name: 'Postman',
+    image: PostMan
+  },
+
+  // Databases
   {
     name: 'PostgreSQL',
     image: Postgresql
@@ -196,10 +244,8 @@ export const techs = [
     name: 'Elastic Search',
     image: ElasticSearch
   },
-  {
-    name: 'JWT',
-    image: Jwt
-  },
+
+  // Testing
   {
     name: 'Jest',
     image: Jest
@@ -220,6 +266,8 @@ export const techs = [
     name: 'Vitest',
     image: Vitest
   },
+
+  // Build Tools
   {
     name: 'EsBuild',
     image: EsBuild
@@ -229,17 +277,11 @@ export const techs = [
     image: WebPack
   },
   {
-    name: 'Tailwind',
-    image: Tailwind
+    name: 'TurboRepo',
+    image: Turborepo
   },
-  {
-    name: 'Sass',
-    image: Sass
-  },
-  {
-    name: 'StoryBook',
-    image: StoryBook
-  },
+
+  // DevOps and Other Tools
   {
     name: 'Git',
     image: Git
@@ -257,10 +299,6 @@ export const techs = [
     image: Confluence
   },
   {
-    name: 'Postman',
-    image: PostMan
-  },
-  {
     name: 'Jupyter',
     image: Jupyter
   },
@@ -276,10 +314,8 @@ export const techs = [
     name: 'LaunchDarkly',
     image: LaunchDarkly
   },
-  {
-    name: 'TurboRepo',
-    image: Turborepo
-  },
+
+  // Learning
   {
     name: 'Rust (Learning)',
     image: Rust
