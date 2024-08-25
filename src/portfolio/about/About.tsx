@@ -10,7 +10,7 @@ that **prioritize user satisfaction** and high-quality performance. My expertise
 where I have successfully contributed to projects in diverse sectors including **energy solutions**,  **government services**, 
 and  **digital media**.`
 
-const text2 = `Currently, I work as a  **Senior Full Stack Engineer ** at  **Epilot GmbH** in Cologne, Germany, where I 
+const text2 = `Currently, I work as a  **Senior Fullstack Engineer ** at  **Epilot GmbH** in Cologne, Germany, where I 
 collaborate closely with **cross-functional teams ** to develop  **end-to-end features ** that enhance product innovation. 
 My role involves everything from  **brainstorming ** and  **designing proof-of-concepts ** to developing  **minimum viable products**, 
 ensuring that each deliverable aligns with both technical feasibility and **user needs**.`

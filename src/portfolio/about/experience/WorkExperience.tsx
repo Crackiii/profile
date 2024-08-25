@@ -39,7 +39,7 @@ const experience = [
     location: 'Cologne, Germany',
     position: 'Senior Fullstack Engineer',
     date: 'Feb 2021 - Present',
-    description: `At Epilot GmbH, a leading cloud-based software provider for energy solutions, I work as a Senior Full Stack Engineer. My responsibilities include collaborating with product managers, designers, and other engineers to develop end-to-end features that meet both user needs and technical requirements. I actively contribute to brainstorming sessions, authoring Request for Comments (RFCs), and creating Proof of Concepts (POCs) to validate new ideas. My role involves building Minimum Viable Products (MVPs) and Minimum Lovable Products (MLPs), prioritizing high standards of code quality, and ensuring robust unit and end-to-end testing. My work has consistently contributed to the product's excellence, enhancing user satisfaction and driving innovation.`,
+    description: `At Epilot GmbH, a leading cloud-based software provider for energy solutions, I work as a Senior Fullstack Engineer. My responsibilities include collaborating with product managers, designers, and other engineers to develop end-to-end features that meet both user needs and technical requirements. I actively contribute to brainstorming sessions, authoring Request for Comments (RFCs), and creating Proof of Concepts (POCs) to validate new ideas. My role involves building Minimum Viable Products (MVPs) and Minimum Lovable Products (MLPs), prioritizing high standards of code quality, and ensuring robust unit and end-to-end testing. My work has consistently contributed to the product's excellence, enhancing user satisfaction and driving innovation.`,
     technologies: [
       'JavaScript',
       'TypeScript',
@@ -97,9 +97,9 @@ const experience = [
     companyImage: IBM,
     companyLink: 'https://www.ibm.com',
     location: ' Abu Dhabi, UAE',
-    position: 'Senior Full Stack Developer',
+    position: 'Senior Fullstack Developer',
     date: 'Nov 2019 — May 2020',
-    description: `At IBM, I worked as a Full Stack Engineer on the TAMM project, a government services portal in Abu Dhabi. My role involved front-end development using React, with a focus on creating a user interface that supported both Arabic and English localizations. I collaborated with DevOps, VAPT, QA teams, and fellow engineers to develop a seamless user experience. I also contributed to backend development by building robust APIs and implementing business logic with Node.js. Additionally, I played a key role in mentoring junior engineers and ensured the product met customer expectations.`,
+    description: `At IBM, I worked as a Fullstack Engineer on the TAMM project, a government services portal in Abu Dhabi. My role involved front-end development using React, with a focus on creating a user interface that supported both Arabic and English localizations. I collaborated with DevOps, VAPT, QA teams, and fellow engineers to develop a seamless user experience. I also contributed to backend development by building robust APIs and implementing business logic with Node.js. Additionally, I played a key role in mentoring junior engineers and ensured the product met customer expectations.`,
     technologies: [
       'React',
       'Redux',
@@ -126,9 +126,9 @@ const experience = [
     companyLink:
       'https://www.linkedin.com/company/eziline/?originalSubdomain=pk',
     location: 'Islamabad, Pakistan',
-    position: 'Senior Full Stack Software Engineer',
+    position: 'Senior Fullstack Software Engineer',
     date: 'Jul 2018 — Sep 2019',
-    description: `At Eziline, a digital services company, I served as a Senior Full Stack Developer. My responsibilities included designing and optimizing databases, developing dynamic web platforms using JavaScript, Angular, PHP, and Laravel, and ensuring seamless integration between front-end and back-end components. I implemented responsive design principles and conducted code reviews to maintain high standards. My efforts led to the successful and timely delivery of projects that consistently met or exceeded client expectations.`,
+    description: `At Eziline, a digital services company, I served as a Senior Fullstack Developer. My responsibilities included designing and optimizing databases, developing dynamic web platforms using JavaScript, Angular, PHP, and Laravel, and ensuring seamless integration between front-end and back-end components. I implemented responsive design principles and conducted code reviews to maintain high standards. My efforts led to the successful and timely delivery of projects that consistently met or exceeded client expectations.`,
     technologies: [
       'JavaScript',
       'Angular',
@@ -172,9 +172,9 @@ const experience = [
     companyLink:
       'https://www.linkedin.com/company/teknords/?originalSubdomain=pk',
     location: 'Swat, Pakistan',
-    position: 'Full Stack Developer',
+    position: 'Fullstack Developer',
     date: 'Mar 2014 — Apr 2016',
-    description: `Starting as an intern and transitioning to a Full Stack Developer at Teknords, I was involved in a variety of tasks including project planning, task assignments, code testing, and reviewing. I worked closely with business analysts and managed a small team of engineers. My commitment to learning and growth in the industry was evident through my proactive approach and attention to detail on every project.`,
+    description: `Starting as an intern and transitioning to a Fullstack Developer at Teknords, I was involved in a variety of tasks including project planning, task assignments, code testing, and reviewing. I worked closely with business analysts and managed a small team of engineers. My commitment to learning and growth in the industry was evident through my proactive approach and attention to detail on every project.`,
     technologies: [
       'JavaScript',
       'jQuery',
