@@ -33,6 +33,7 @@
     padding: 0px 2px;
     color: var(--text-strong-color);
     line-height: 150%;
+    border-radius: var(--border-radius);
 }
 
 .profile-summary .buttons {
