@@ -8,6 +8,7 @@ import ParticlesC from './Particles'
 import About from './portfolio/about/About'
 import Blogs from './portfolio/blogs/Blogs'
 import Details from './portfolio/details/Details'
+import Footer from './portfolio/footer/Footer'
 import Navigation from './portfolio/navigation/Navigation'
 import reportWebVitals from './reportWebVitals'
 
@@ -28,6 +29,7 @@ root.render(
               <Route element={<h3>Coming soon ...</h3>} path="/fun" />
               <Route element={<div>404</div>} path="*" />
             </Routes>
+            <Footer />
           </div>
         </Router>
       </div>

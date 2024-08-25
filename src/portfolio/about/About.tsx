@@ -1,5 +1,4 @@
 import NadeemBigImage from '../../images/Naddeem_big.jpg'
-import Footer from '../footer/Footer'
 import { makeTextBold } from '../profile-summary/ProfileSummary'
 import './about.css'
 
@@ -39,8 +38,6 @@ function About() {
         <div className="profile-details">{makeTextBold(text3)}</div>
 
         <WorkExperience />
-
-        <Footer />
       </div>
     </div>
   )
