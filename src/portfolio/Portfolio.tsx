@@ -1,6 +1,5 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
-import './portfolio.css'
 import About from './about/About'
 import Details from './details/Details'
 import NotFound from './NotFound'

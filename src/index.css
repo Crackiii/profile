@@ -125,3 +125,11 @@ button:active {
     margin-top: 100px;
   }
 }
+
+@media (max-width: 500px) {
+  .portfolio {
+    flex-direction: column;
+    margin: 0 20px;
+    margin-top: 100px;
+  }
+}

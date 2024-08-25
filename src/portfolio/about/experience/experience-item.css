@@ -41,11 +41,11 @@
     align-items: center;
     border-radius: var(--border-radius);
     background-color: var(--hover-color);
-    display: none;
+    visibility: hidden;
 }
 
 .experience-item:hover .company-link a {
-    display: flex;
+    visibility: visible;
 }
 
 .experience-item .tags {
@@ -53,14 +53,8 @@
     flex-wrap: wrap;
     gap: 10px;
 }
-
-
-@media (max-width: 550px) {
-    .experience-item .header {
-        flex-wrap: wrap;
-    }
-
-    .experience-item .my-details{
-        flex-wrap: wrap;
-    }
+.location-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px
 }

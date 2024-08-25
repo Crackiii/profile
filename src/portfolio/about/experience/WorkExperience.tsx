@@ -1,10 +1,10 @@
-import Dinkum from '../../images/work/dinkum.png'
-import Epilot from '../../images/work/epilot.png'
-import Eziline from '../../images/work/exiline.png'
-import IBM from '../../images/work/ibm.png'
-import Teknords from '../../images/work/teknords.png'
-import Triumpho from '../../images/work/triupho.png'
-import Vidy from '../../images/work/vidy2.png'
+import Dinkum from '../../../images/work/dinkum.png'
+import Epilot from '../../../images/work/epilot.png'
+import Eziline from '../../../images/work/exiline.png'
+import IBM from '../../../images/work/ibm.png'
+import Teknords from '../../../images/work/teknords.png'
+import Triumpho from '../../../images/work/triupho.png'
+import Vidy from '../../../images/work/vidy2.png'
 
 import ExperienceItem from './ExperienceItem'
 import './work-experience.css'
@@ -37,7 +37,7 @@ const experience = [
     companyImage: Epilot,
     companyLink: 'https://www.epilot.cloud',
     location: 'Cologne, Germany',
-    position: 'Senior full stack engineer',
+    position: 'Senior Fullstack Engineer',
     date: 'Feb 2021 - Present',
     description: `At Epilot GmbH, a leading cloud-based software provider for energy solutions, I work as a Senior Full Stack Engineer. My responsibilities include collaborating with product managers, designers, and other engineers to develop end-to-end features that meet both user needs and technical requirements. I actively contribute to brainstorming sessions, authoring Request for Comments (RFCs), and creating Proof of Concepts (POCs) to validate new ideas. My role involves building Minimum Viable Products (MVPs) and Minimum Lovable Products (MLPs), prioritizing high standards of code quality, and ensuring robust unit and end-to-end testing. My work has consistently contributed to the product's excellence, enhancing user satisfaction and driving innovation.`,
     technologies: [
@@ -191,6 +191,9 @@ const experience = [
 function WorkExperience() {
   return (
     <div className="work-experience">
+      <div className="header">
+        <h2>💼 Work Experience</h2>
+      </div>
       {experience.map((experience, index) => (
         <ExperienceItem key={index} {...experience} />
       ))}

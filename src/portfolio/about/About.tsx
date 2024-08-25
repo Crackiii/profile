@@ -3,7 +3,7 @@ import Footer from '../footer/Footer'
 import { makeTextBold } from '../profile-summary/ProfileSummary'
 import './about.css'
 
-import WorkExperience from './WorkExperience'
+import WorkExperience from './experience/WorkExperience'
 
 const text1 = `
 With over **seven years of experience** in **software engineering**, I am dedicated to building **impactful digital solutions** 
