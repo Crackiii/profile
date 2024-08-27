@@ -34,10 +34,10 @@ function ProfileSummary() {
     focusing on **rigorous testing**, accessibility, effective **teamwork**, and maintaining 
     high **code quality** to ensure optimal user experiences.`
 
-  // const handleCVDownload = () => {
-  //   // Open the PDF file in a new tab
-  //   window.open('/Nadeem_CV.pdf', '_blank')
-  // }
+  const handleCVDownload = () => {
+    // Open the PDF file in a new tab
+    window.open('/Nadeem_CV.pdf', '_blank')
+  }
 
   return (
     <div className="profile-summary">
@@ -50,11 +50,7 @@ function ProfileSummary() {
       <div className="profile-details">{makeTextBold(text)}</div>
       <div className="buttons">
         <button onClick={() => navigate('/about')}>Read more about me →</button>
-        <button>
-          <a href="/Nadeem_CV.pdf" rel="noopener noreferrer" target="_blank">
-            View my CV ↑
-          </a>
-        </button>
+        <button onClick={handleCVDownload}>View my CV ↑</button>
       </div>
     </div>
   )
