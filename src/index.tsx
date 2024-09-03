@@ -10,6 +10,7 @@ import Blogs from './portfolio/blogs/Blogs'
 import Details from './portfolio/details/Details'
 import Footer from './portfolio/footer/Footer'
 import Navigation from './portfolio/navigation/Navigation'
+import NotFound from './portfolio/NotFound'
 import reportWebVitals from './reportWebVitals'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
@@ -27,7 +28,7 @@ root.render(
               <Route element={<About />} path="/about" />
               <Route element={<Blogs />} path="/blogs" />
               <Route element={<h3>Coming soon ...</h3>} path="/fun" />
-              <Route element={<div>404</div>} path="*" />
+              <Route element={<NotFound />} path="*" />
             </Routes>
             <Footer />
           </div>
